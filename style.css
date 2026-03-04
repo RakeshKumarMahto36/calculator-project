@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#calculator {
+    height: 300px;
+    padding: 20px;
+    background-color: green;
+}
