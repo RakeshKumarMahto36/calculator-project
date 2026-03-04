@@ -5,7 +5,7 @@ buttons.forEach(button => {
     button.addEventListener("click", function handleClick(){
         var key = button.textContent;
         calculate(key);
-    })
+    });
 });
 
 function calculate(key){
@@ -17,7 +17,6 @@ function calculate(key){
             display.value="";
             break;
         case "D":
-            //if(display.value.length>1)
             display.value=display.value.slice(0,-1);
             break;
         default:
@@ -26,15 +25,3 @@ function calculate(key){
     }
     
 }
-// When user clicks a number button → display that number
-// When user clicks an operator (+, -, *, /) → store it
-// When user clicks another number → display the new number
-// When user clicks "=" → calculate and show result
-// When user clicks "C" → clear everything
-// Handle decimal points (.)
-// Key JavaScript concepts you'll need:
-
-// Event listeners (addEventListener)
-// DOM manipulation (getElementById, textContent)
-// String/number operations
-// eval() function (or build your own calculator logic)
